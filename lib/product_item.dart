@@ -16,7 +16,7 @@ class ProductItem extends StatelessWidget {
           Navigator.push(context, MaterialPageRoute(builder: (context) =>
           ProductDescriptionScreen(id:postItem[index]['id'],
           name: postItem[index]['name'],price: postItem[index]['price'],
-          description: postItem[index]['description'],rating: postItem[index]['rating'],img: postItem[index]['img'],)));
+          description: postItem[index]['description'],rating: postItem[index]['star_rating'],img: postItem[index]['img'],)));
         },
         child: Card(
            color: Colors.transparent,
