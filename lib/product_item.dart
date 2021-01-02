@@ -19,11 +19,14 @@ class ProductItem extends StatelessWidget {
            children: [
              //card image
 
-             Image.network(
-                postItem[index]["img"],
-               width: MediaQuery.of(context).size.width,
-               height:150.0,
-               fit: BoxFit.cover,
+             Hero(
+               tag: postItem[index]['id'],
+               child: Image.network(
+                  postItem[index]["img"],
+                 width: MediaQuery.of(context).size.width,
+                 height:150.0,
+                 fit: BoxFit.cover,
+               ),
              ),
           Container(
             padding: EdgeInsets.only(left: 5,top: 10),
