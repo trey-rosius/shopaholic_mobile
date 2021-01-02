@@ -47,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
                alignment: Alignment.topLeft,
                child: SafeArea(
                  child: Container(
-                   padding: EdgeInsets.symmetric(vertical: 20,horizontal: 20),
+                   padding: EdgeInsets.symmetric(horizontal: 20),
                    child: Row(
                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                      children: [
@@ -68,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
          Align(
            alignment: Alignment.center,
            child: Container(
-             padding: EdgeInsets.only(top: 150),
+             padding: EdgeInsets.only(top: 50),
              child: FutureBuilder(future: futureList,
                  builder: (context,AsyncSnapshot<List>snapshot){
                    if(snapshot.hasData)
