@@ -6,7 +6,7 @@ class ProductDescriptionScreen extends StatefulWidget {
   final String name;
   final int rating;
   final String description;
-  final int price;
+  final double price;
   final String img;
   @override
   _ProductDescriptionScreenState createState() => _ProductDescriptionScreenState();
@@ -20,7 +20,7 @@ class _ProductDescriptionScreenState extends State<ProductDescriptionScreen> {
         slivers: [
           SliverAppBar(
 
-            expandedHeight: 150.0,
+            expandedHeight: 250.0,
             floating: true,
             pinned: true,
             snap: false,
