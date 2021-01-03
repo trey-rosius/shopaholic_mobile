@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopaholic/Config.dart';
 import 'package:shopaholic/product_item.dart';
 import 'package:shopaholic/wavy_header.dart';
 import 'package:http/http.dart' as http;
@@ -17,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     // Await the http get response, then decode the json-formatted response.
     var response = await http.get(url,headers: {
-      "x-api-key":"XOKgw1aCa47YgBkcaLtQt78kW7bZGj5U6QDVOIQh"
+      "x-api-key":Config.AWS_API_KEY
     });
     if (response.statusCode == 200) {
       var jsonResponse = convert.jsonDecode(response.body);
