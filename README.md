@@ -1,8 +1,8 @@
 # shopaholic(Flutter Application)
 
-A serverless mobile e-commerce application built with AWS and it's backend.
+A serverless mobile e-commerce application built with AWS.
 Actually, it's just a sample application, show casing the speed at which anybody can build full stack applications using Flutter and AWS. 
-The modules used on the AWS platform are 
+AWS Services used
 - [x] Lambda
 - [x] Api gateway
 - [x] Dynamo DB
